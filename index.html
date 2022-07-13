@@ -3,39 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
-  <!-- Google fonts stylesheet 👍 -->
+  <!-- Google fonts & stylesheet 👍 -->
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css" />
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="tailwind/output.css" />
 </head>
-<body>
+<body class="bg-paleblue font-redhat h-screen flex items-center justify-center bg-[url('../images/pattern-background-desktop.svg')] bg-repeat-x bg-top bg-fixed">
 
-  Order Summary
+  <article class="bg-white rounded-2xl shadow-2xl max-w-md overflow-hidden mx-6">
+    <figure>
+      <img src="images/illustration-hero.svg" alt="order summary header image" />
+    </figure>
+    <div class="p-6 sm:p-10">
+      <h1 class="text-xl sm:text-2xl text-center font-bold text-darkblue mb-4">Order Summary</h1>
+      <p class="text-desaturatedblue text-center">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      <div class="flex bg-verypaleblue p-5 items-center gap-4 rounded-lg mt-6">
+        <img src="images/icon-music.svg" alt="music">
+        <div class="flex-auto flex flex-col">
+          <strong class="text-darkblue">Annual Plan</strong>
+          <span class="text-desaturatedblue">$59.99/year</span>
+        </div>
+        <a href="#" class="text-brightblue text-sm text-center py-2 font-semibold underline hover:text-brightbluehover hover:transition-all hover:no-underline">Change</a>
+      </div>
+      <a href="#" class="text-white bg-brightblue block text-center py-3 my-4 rounded-lg shadow-2xl font-semibold hover:bg-brightbluehover hover:transition-all">Proceed to Payment</a>
+      <a href="#" class="text-desaturatedblue text-sm text-center py-2 font-bold block mx-auto hover:text-darkblue hover:transition-all">Cancel Order</a>
+    </div>
+  </article>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="fixed bottom-2 text-base text-slate-600 text-center w-full font-outfit">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-700">Frontend Mentor</a>.
+    Coded by <a href="http://jameeronline.com" class="text-blue-700">Jamal Mohamed Ameer</a>.
+  </footer>
 </body>
 </html>
